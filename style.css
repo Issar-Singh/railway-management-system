@@ -1,0 +1,255 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sen', sans-serif;
+}
+header{
+    background: fixed;
+    top: 0;left: 0;right: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #00bfff;
+}
+header.logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+
+}
+nav.navbar ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+nav.navbar ul li{
+    position: relative;
+    float: left;
+    display: block;
+
+}
+nav.navbar ul li a{
+    font-size: 20px;
+    padding: 18px;
+    display: block;
+    color: white;
+}
+.box{
+    float: right;
+    height: 545px;
+    width: 800px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px grey;
+    border-radius: 4px;
+    background-image: url(train1.jpg);
+    background-size: cover;
+    text-align: center;
+    border-right: 3px #00bfff;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    float: left;
+    width: 460px;
+    height: 540px;
+  }
+
+  .holiday{
+    display: flex;
+    background-color: #00bfff;
+    height: 450px;
+    width: 1280px;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+  }
+  .item{
+    background-color: #ccc;
+    margin: 20px;
+    border: 2px solid black;
+    width: 33.33%;
+    height: 400px;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .text{
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    width: 1280px;
+    display: flex;
+    background-color: #00bfff;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .image{
+    width: 380px;
+    height: 220px;
+    border-radius: 8px;
+  }
+  ul{
+    text-align: left;
+  }
+  ul li{
+    list-style-type: circle;
+    margin-left: 25px;
+    text-transform: capitalize;
+  }
+
+  /* EDITING -- STARTS -- HERE --   ....  */
+  
+  /* Basic design of blog card */
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Blog post design starts from here */
+  .card {
+    overflow: hidden;
+    box-shadow: 0px 2px 20px #d7dfe2; /* Card outline shadow */
+    background: white; /* post background color */
+    border-radius: 0.5rem;
+    position: relative;
+    width: 350px; /* post card width */
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card:hover {  /* blog post hover */
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px #d7dfe2;
+  }
+  
+  /*Design banner image*/
+  .banner-img {
+    position: absolute;
+    object-fit: cover;
+    height: 14rem; /* image height */
+    width: 100%;
+  }
+  
+  /* Design catagory text */
+  .category-tag {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white; /* text color */
+    background: red;  /* text background color */
+    padding: 0.5rem 1.3rem 0.5rem 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  /* 1st catagory text background color */
+  .popular {
+    background: #ef257a;
+  }
+  
+  /* 2st catagory text background color */
+  .technology {
+    background: #651fff;
+  }
+  
+  /* 3st catagory text background color */
+  .psychology {
+    background: #e85808;
+  }
+  
+  /* Design of # tags, heading, description starts from here */
+  .card-body {
+    margin: 15rem 1rem 1rem 1rem;
+  }
+  
+  /* #tags design */
+  .blog-hashtag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4d97b2;
+  }
+  
+  /* heading design */
+  .blog-title {
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  /*Design of profile image, name, followers starts from here*/
+  .card-profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  /* Profile image */
+  
+  .profile-img {
+    width: 60px; /* image width */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card-profile-info {
+    margin-left: 1rem;
+  }
+  
+  /* profile name */
+  .profile-name {
+    font-size: 1rem;
+  }
+  
+  /*Profile followers */
+  .profile-followers {
+    color: #616b74;
+    font-size: 0.9rem;
+  }
+  .heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 1px 2px #f2f2f2;
+  }
